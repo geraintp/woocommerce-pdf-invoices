@@ -1,0 +1,20 @@
+{
+    "name": "geraintp/woocommerce-pdf-invoices",
+    "description": "Automatically generate and attach customizable PDF Invoices to WooCommerce emails and connect with Dropbox, Google Drive, OneDrive or Egnyte.",
+    "keywords": ["invoice", "pdf", "plugin", "woocommerce", "wordpress"],
+    "homepage": "https://wordpress.org/plugins/woocommerce-pdf-invoices",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Bas Elbers",
+            "email": "bas@wcpdfinvoices.com",
+            "homepage": "http://wcpdfinvoices.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "wordpress": ">=4.0",
+        "wpackagist-plugin/woocommerce": ">=2.6.0"
+    }
+}
