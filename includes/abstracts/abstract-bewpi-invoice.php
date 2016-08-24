@@ -389,10 +389,10 @@ if ( ! class_exists( 'BEWPI_Abstract_Invoice' ) ) {
         public function delete()
         {
             // remove all invoice data from db
-            delete_post_meta($this->order->id, '_bewpi_invoice_number');
-            delete_post_meta($this->order->id, '_bewpi_formatted_invoice_number');
-            delete_post_meta($this->order->id, '_bewpi_invoice_date');
-            delete_post_meta($this->order->id, '_bewpi_invoice_year');
+            // delete_post_meta($this->order->id, '_bewpi_invoice_number');
+            // delete_post_meta($this->order->id, '_bewpi_formatted_invoice_number');
+            // delete_post_meta($this->order->id, '_bewpi_invoice_date');
+            // delete_post_meta($this->order->id, '_bewpi_invoice_year');
 
             do_action('bewpi_after_post_meta_deletion', $this->order->id);
 
