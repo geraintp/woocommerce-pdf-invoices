@@ -331,7 +331,7 @@ if ( ! class_exists( 'BEWPI_Abstract_Invoice' ) ) {
             }
 
             $this->number = empty( $this->number ) ? $this->get_next_invoice_number() : $this->number;
-            $this->formatted_number = empty( $this->number ) ? $this->get_formatted_number() : $this->formatted_number;
+            $this->formatted_number = empty( $this->formatted_number ) ? $this->get_formatted_number() : $this->formatted_number;
             $this->filename = $this->formatted_number . '.pdf';
             $this->year = empty( $this->year ) ? date_i18n('Y', current_time('timestamp')) : $this->year;
             $this->full_path = BEWPI_INVOICES_DIR . (string)$this->year . '/' . $this->filename;
