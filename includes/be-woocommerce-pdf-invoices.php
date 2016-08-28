@@ -386,7 +386,8 @@ if ( ! class_exists( 'BE_WooCommerce_PDF_Invoices' ) ) {
 			$attachments = apply_filters( 'bewpi_email_attachments', $attachments, $status, $order );
 
             $general_options = get_option( 'bewpi_general_settings' );
-            if(empty($general_options["bewpi_email_type"]) || $status !== $general_options["bewpi_email_type"])
+            if(empty($general_options["bewpi_email_type"]) || !($status == $general_options["bewpi_email_type"] OR
+            	 $status == 'customer_on_hold_order') )
             {
                 return $attachments;
             }

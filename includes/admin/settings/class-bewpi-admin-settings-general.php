@@ -90,6 +90,10 @@ if ( ! class_exists( 'BEWPI_General_Settings' ) ) {
 				    'type' => 'text',
 				    'desc' => '',
 				    'options' => array(
+				    	array(
+						    'name' => __( 'On Hold order', 'woocommerce-pdf-invoices' ),
+						    'value' => 'customer_on_hold_order'
+					    ),
 					    array(
 						    'name' => __( 'Processing order', 'woocommerce-pdf-invoices' ),
 						    'value' => 'customer_processing_order'
